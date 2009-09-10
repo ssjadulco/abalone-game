@@ -1,0 +1,21 @@
+#summary Lists all research found by team
+= Introduction =
+
+Please add all important research here. 
+
+
+= Research =
+
+== Basic AI ==
+Here wikipedia link on Minimax Algorithm.
+[http://en.wikipedia.org/wiki/Minimax]
+
+Here wikipedia link on Alpha-Beta Pruning.
+[http://en.wikipedia.org/wiki/Alpha-beta_pruning]
+
+Here wikipedia link on Iterative Deepening.
+[http://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search]
+
+== Other AI ==
+Here is wikipedia link on SSS* Algorithm.
+[http://en.wikipedia.org/wiki/SSS* SSS*]
