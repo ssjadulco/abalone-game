@@ -6,7 +6,7 @@ Please add all important research here.
 
 = Research =
 
-== Basic AI ==
+== Standard Search Algorithms ==
 Here wikipedia link on Minimax Algorithm.
 [http://en.wikipedia.org/wiki/Minimax]
 
@@ -16,6 +16,9 @@ Here wikipedia link on Alpha-Beta Pruning.
 Here wikipedia link on Iterative Deepening.
 [http://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search]
 
-== Other AI ==
 Here is wikipedia link on SSS* Algorithm.
 [http://en.wikipedia.org/wiki/SSS* SSS*]
+
+== Machine Learning ==
+Abalearn: A Risk-Sensitive Approach to Self-play Learning in Abalone.
+[http://books.google.nl/books?id=L4h2A2vF2pUC&pg=PA35&lpg=PA35&dq=%22machine+learning%22%2Babalone&source=bl&ots=3KOwjAK1zv&sig=kTf2yF8uy4t8g8Jx8r09T9jvd_M&hl=nl&ei=sfqxSvOwN8bi-QaZvsXcCQ&sa=X&oi=book_result&ct=result&resnum=5#v=onepage&q=%22machine%20learning%22%2Babalone&f=false]
