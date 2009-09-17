@@ -17,7 +17,7 @@ Here wikipedia link on Iterative Deepening.
 [http://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search]
 
 Here is wikipedia link on SSS* Algorithm.
-[http://en.wikipedia.org/wiki/SSS* SSS*]
+[http://en.wikipedia.org/wiki/SSS*]
 
 == Machine Learning ==
 Abalearn: A Risk-Sensitive Approach to Self-play Learning in Abalone.
