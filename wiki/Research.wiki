@@ -29,3 +29,5 @@ Abalearn: A Risk-Sensitive Approach to Self-play Learning in Abalone.
 
 Abalearn: Efficient Self-Play Learning of the game Abalone
 [http://www.google.nl/url?sa=t&source=web&ct=res&cd=1&url=http%3A%2F%2Fdme.uma.pt%2Fpeople%2Ffaculty%2Fpedro.campos%2Fpapers%2FAbalearn.pdf&ei=uPyxSsz7LpDs-Ab4uvTrCQ&rct=j&q=%22machine+learning%22%2Babalone%2BAbalearn&usg=AFQjCNHY2SpQYlE0ppNwfLdY-UDynosyZQ]
+
+[http://stackoverflow.com/questions/1291377/how-do-i-create-a-good-evaluation-function-for-a-new-board-game]
