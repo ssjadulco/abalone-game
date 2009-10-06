@@ -11,15 +11,18 @@ Please add all important research here.
 === Minimax Algorithm ===
 [http://en.wikipedia.org/wiki/Minimax Minimax] is a 
 
+=== Alpha-Beta Pruning ===
+[http://en.wikipedia.org/wiki/Alpha-beta_pruning Alpha-Beta] is a 
 
-Here wikipedia link on Alpha-Beta Pruning.
-[http://en.wikipedia.org/wiki/Alpha-beta_pruning]
+=== Negascout Algorithm ===
 
-Here wikipedia link on Iterative Deepening.
-[http://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search]
+=== SSS Star Algorithm ===
+[http://en.wikipedia.org/wiki/SSS* SSS Star] is a algorithm
 
-Here is wikipedia link on SSS Star Algorithm.
-[http://en.wikipedia.org/wiki/SSS*]
+=== Iterative Deepening ===
+[http://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search Iterative Deepening] is 
+
+
 
 Implementing a Computer Player for Abalone using Alpha-Beta and Monte-Carlo Search.
 [http://www.google.nl/url?sa=t&source=web&ct=res&cd=2&url=http%3A%2F%2Fwww.unimaas.nl%2Fgames%2Ffiles%2Fpcreport.pdf&ei=tf6xSpe4MY7M-Qbg9MzPCQ&rct=j&q=abalone%2BAI%2Buiterwijk&usg=AFQjCNE5x_qHw8vD-PLRUzNuORKfafADbQ]
