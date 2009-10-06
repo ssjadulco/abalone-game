@@ -11,19 +11,19 @@ This is a quick overview of different approaches to artificial intelligence whic
 == Standard Game Tree Search Algorithms ==
 
 === Minimax Algorithm ===
-*[http://en.wikipedia.org/wiki/Minimax Minimax]* is a 
+[http://en.wikipedia.org/wiki/Minimax Minimax] is a 
 
 === Alpha-Beta Pruning ===
-*[http://en.wikipedia.org/wiki/Alpha-beta_pruning Alpha-Beta]* is a 
+[http://en.wikipedia.org/wiki/Alpha-beta_pruning Alpha-Beta] is a 
 
 === Negascout Algorithm ===
-*[http://en.wikipedia.org/wiki/Negascout Negascout]* is
+[http://en.wikipedia.org/wiki/Negascout Negascout] is
 
-=== SSS* Algorithm ===
-[http://en.wikipedia.org/wiki/SSS* SSS*]* is a algorithm
+=== SSS Star Algorithm ===
+[http://en.wikipedia.org/wiki/SSS* SSS Star] is a algorithm
 
 === Iterative Deepening ===
-*[http://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search Iterative Deepening]* is 
+[http://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search Iterative Deepening] is 
 
 
 
