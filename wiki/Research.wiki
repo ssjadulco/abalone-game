@@ -17,6 +17,7 @@ This is a quick overview of different approaches to artificial intelligence whic
 [http://en.wikipedia.org/wiki/Alpha-beta_pruning Alpha-Beta] is a 
 
 === Negascout Algorithm ===
+[http://en.wikipedia.org/wiki/Negascout Negascout] is
 
 === SSS Star Algorithm ===
 [http://en.wikipedia.org/wiki/SSS* SSS Star] is a algorithm
