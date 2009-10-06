@@ -19,8 +19,8 @@ This is a quick overview of different approaches to artificial intelligence whic
 === Negascout Algorithm ===
 [http://en.wikipedia.org/wiki/Negascout Negascout] is
 
-=== SSS Star Algorithm ===
-[http://en.wikipedia.org/wiki/SSS* SSS Star] is a algorithm
+=== SSS*r Algorithm ===
+[http://en.wikipedia.org/wiki/SSS* SSS*] is a algorithm
 
 === Iterative Deepening ===
 [http://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search Iterative Deepening] is 
