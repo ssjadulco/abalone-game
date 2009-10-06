@@ -1,8 +1,10 @@
 #summary Lists all research found by team
 = Introduction =
 
-Please add all important research here. 
+This is a quick overview of different approaches to artificial intelligence which could be interesting to implement into the abalone-game.
 
+= Table of Contents =
+<wiki:toc max_depth="3"/>
 
 = Research =
 
