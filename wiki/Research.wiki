@@ -19,7 +19,7 @@ This is a quick overview of different approaches to artificial intelligence whic
 === Negascout Algorithm ===
 [http://en.wikipedia.org/wiki/Negascout Negascout] is
 
-=== SSS*r Algorithm ===
+=== SSS* Algorithm ===
 [http://en.wikipedia.org/wiki/SSS* SSS*] is a algorithm
 
 === Iterative Deepening ===
