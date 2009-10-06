@@ -30,6 +30,7 @@ This is a quick overview of different approaches to artificial intelligence whic
 Implementing a Computer Player for Abalone using Alpha-Beta and Monte-Carlo Search.
 [http://www.google.nl/url?sa=t&source=web&ct=res&cd=2&url=http%3A%2F%2Fwww.unimaas.nl%2Fgames%2Ffiles%2Fpcreport.pdf&ei=tf6xSpe4MY7M-Qbg9MzPCQ&rct=j&q=abalone%2BAI%2Buiterwijk&usg=AFQjCNE5x_qHw8vD-PLRUzNuORKfafADbQ]
 
+== evaluation Functions ==
 
 == Machine Learning ==
 Stuff about machine learning here.
