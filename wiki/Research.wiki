@@ -52,7 +52,10 @@ _Disadvantages_:
 A [http://en.wikipedia.org/wiki/Transposition_table transposition table] is a table which monitors all possible moves analyzed, and makes sure no double moves are analyzed. It is often done through the use of a [http://en.wikipedia.org/wiki/Hash_table hash table].  
 
 == Evaluation Functions ==
-Stuff about evaluation functions will go here.
+A [http://en.wikipedia.org/wiki/Evaluation_function evaluation function] is a function which estimates how good 
+
+=== Basic Evaluation Function ===
+eval(s) = w1*f1(s) + w2*f2(s)
 
 == Monte Carlo Methods ==
 Stuff about Monte Carlo methods will go here.
