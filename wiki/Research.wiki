@@ -3,7 +3,7 @@
 = Table of Contents =
 <wiki:toc max_depth="3"/>
 
-= Res= Introduction =
+=Introduction =
 This is a quick overview of different approaches to artificial intelligence which could be interesting to implement into the abalone-game.
 earch =
 
