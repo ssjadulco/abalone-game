@@ -23,7 +23,10 @@ The space-state complexity of Abalone is similar to Checkers, and since checkers
 == Game Tree Search Algorithms ==
 
 === Minimax Algorithm ===
-[http://en.wikipedia.org/wiki/Minimax Minimax] is 
+[http://en.wikipedia.org/wiki/Minimax Minimax] is
+
+=== Negamax Algorithm === 
+[http://en.wikipedia.org/wiki/Negamax Negamax] is a simplified variant of Minimax 
 
 === Alpha-Beta Pruning ===
 [http://en.wikipedia.org/wiki/Alpha-beta_pruning Alpha-Beta] is
@@ -34,6 +37,8 @@ The space-state complexity of Abalone is similar to Checkers, and since checkers
 === SSS Star Algorithm ===
 [http://en.wikipedia.org/wiki/SSS* SSS Star] is
 
+=== MTD(f) Algorithm ===
+[http://en.wikipedia.org/wiki/MTD(f) MTD(f)] is
 === Iterative Deepening ===
 [http://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search Iterative Deepening] is
 
