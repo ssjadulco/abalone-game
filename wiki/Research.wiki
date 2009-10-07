@@ -60,4 +60,6 @@ Stuff about machine learning will go here.
 
 [http://www.cs.unimaas.nl/~uiterwyk/Theses/BSc/Lemmens_BSc-paper.pdf Constructing an Abalone Game-Playing Agent] by N.P.P.M. Lemmens.
 
+[http://sander.landofsand.com/publications/Monte-Carlo_Tree_Search_-_A_New_Framework_for_Game_AI.pdf Monte-Carlo Tree Search: A New Framework for Game AI] by Guillaume Chaslot, Sander Bakkes, Istvan Szita and Pieter Spronck 
+
 [http://stackoverflow.com/questions/1291377/how-do-i-create-a-good-evaluation-function-for-a-new-board-game Forum discussion] about evaluation functions.
