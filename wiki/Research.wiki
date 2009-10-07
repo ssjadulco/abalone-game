@@ -18,6 +18,8 @@ This is a quick overview of different approaches to artificial intelligence whic
 === Complexity of Abalone ===
 The average game-length of Abalone, between human players, is around 87 ply. By contrast the average game-length of Abalone, between computer players, is around 130, as computer players play more conservative/defensive. The average branching factor is around 60 - 65.
 
+The space-state complexity of Abalone is similar to Checkers, and since checkers has been solved, it could be solved for Abalone. So space-state complexity for Abalone is low. Having said that, the game-tree complexity of Abalone is complex, due to the high branching factor (As a comparison the branching factor for Chess is around 35, half that of Abalone). Therefore the game-tree complexity of Abalone is high. Overall this leads to a relatively complex game, which is not easy to solve. 
+
 == Standard Game Tree Search Algorithms ==
 
 === Minimax Algorithm ===
