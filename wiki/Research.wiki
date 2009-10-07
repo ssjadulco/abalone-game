@@ -24,6 +24,18 @@ The space-state complexity of Abalone is similar to Checkers, and since checkers
 === Minimax Algorithm ===
 [http://en.wikipedia.org/wiki/Minimax Minimax] is algorithm.
 
+_Pseudo Code_:
+{{{
+function minimax(node, depth)
+    if node is a terminal node or depth == 0:
+        return the heuristic value of node
+    else:
+        α = -∞
+        for child in node:                       # evaluation is identical for both players 
+            α = max(α, -minimax(child, depth-1))
+        return α
+}}}
+
 _Advantages_:
  # Easy to implement.
  # Something else
