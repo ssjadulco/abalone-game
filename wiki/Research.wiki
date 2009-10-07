@@ -23,6 +23,10 @@ The space-state complexity of Abalone is similar to Checkers, and since checkers
 
 === Minimax Algorithm ===
 [http://en.wikipedia.org/wiki/Minimax Minimax] is
+*Advantages*
+#
+*Disadvantages*
+# 
 
 === Negamax Algorithm === 
 [http://en.wikipedia.org/wiki/Negamax Negamax] is a simplified variant of Minimax 
