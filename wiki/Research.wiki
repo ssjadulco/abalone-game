@@ -39,4 +39,6 @@ Stuff about machine learning here.
 
 [http://cse.yeditepe.edu.tr/~eozcan/research/papers/ABLA_id136final.pdf A Simple Intelligent Agent for Playing Abalone Game: ABLA] by Ender Ozcan and Berk Hulagu.
 
+[http://www.cs.unimaas.nl/~uiterwyk/Theses/BSc/Lemmens_BSc-paper.pdf Constructing an Abalone Game-Playing Agent] by N.P.P.M. Lemmens.
+
 [http://stackoverflow.com/questions/1291377/how-do-i-create-a-good-evaluation-function-for-a-new-board-game Forum discussion] about evaluation functions.
