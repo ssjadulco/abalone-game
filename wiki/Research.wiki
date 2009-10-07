@@ -4,10 +4,10 @@
 <wiki:toc max_depth="3"/>
 
 =Introduction =
-This is a quick overview of different approaches to artificial intelligence which could be interesting to implement into the abalone-game.
+Abalone is a two-person [http://en.wikipedia.org/wiki/Zero-sum zero-sum] board game, with [http://en.wikipedia.org/wiki/Perfect_information perfect information]. This is a quick overview of different approaches to artificial intelligence which could be interesting to implement into the abalone-game.
 
 == Game Complexity ==
-Abalone is a two-person [http://en.wikipedia.org/wiki/Zero-sum zero-sum] board game, with [http://en.wikipedia.org/wiki/Perfect_information perfect information].
+Game complexity deals with how complex
 
 === Space-State Complexity ===
 
