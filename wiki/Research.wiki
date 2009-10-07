@@ -10,7 +10,7 @@ This is a quick overview of different approaches to artificial intelligence whic
 
 == Game Complexity ==
 
-The average game-length of Abalone is 87 ply. This is determined with the help of the PBEM-archive which can be found on the internet [1]. As the average branching factor is 60 we can calculate the resulting game-tree complexity: 5.0 × 10^154
+The average game-length of Abalone is 87 ply. This is determined with the help of the PBEM-archive which can be found on the internet. As the average branching factor is 60 we can calculate the resulting game-tree complexity: 5.0 × 10^154
 
 == Standard Game Tree Search Algorithms ==
 
@@ -35,7 +35,7 @@ The average game-length of Abalone is 87 ply. This is determined with the help o
 Stuff about machine learning here.
 
 = Resources =
-[1][http://dme.uma.pt/people/faculty/pedro.campos/papers/Abalearn.pdf Abalearn: Efficient Self-Play Learning of the game Abalone] by Pedro Campos and Thibault Langlois.
+[http://dme.uma.pt/people/faculty/pedro.campos/papers/Abalearn.pdf Abalearn: Efficient Self-Play Learning of the game Abalone] by Pedro Campos and Thibault Langlois.
 
 [http://books.google.nl/books?id=L4h2A2vF2pUC&pg=PA35&lpg=PA35&dq=%22machine+learning%22%2Babalone&source=bl&ots=3KOwjAK1zv&sig=kTf2yF8uy4t8g8Jx8r09T9jvd_M&hl=nl&ei=sfqxSvOwN8bi-QaZvsXcCQ&sa=X&oi=book_result&ct=result&resnum=5#v=onepage&q=%22machine%20learning%22%2Babalone&f=false Abalearn: A Risk-Sensitive Approach to Self-play Learning in Abalone] by Pedro Campos and Thibault Langlois.
 
