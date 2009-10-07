@@ -55,7 +55,7 @@ A [http://en.wikipedia.org/wiki/Transposition_table transposition table] is a ta
 A [http://en.wikipedia.org/wiki/Evaluation_function evaluation function] is a function which estimates how good 
 
 === Basic Evaluation Function ===
-eval(_s_) = ^w^1*^f^1(_s_) + ^w^2*^f^2(_s_)
+eval(_s_) = ^w^1^f^1(_s_) + ^w^2^f^2(_s_)
 
 == Monte Carlo Methods ==
 Stuff about Monte Carlo methods will go here.
