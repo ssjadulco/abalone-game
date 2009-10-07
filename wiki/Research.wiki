@@ -9,7 +9,7 @@ This is a quick overview of different approaches to artificial intelligence whic
 = Research =
 
 == Game Complexity ==
-Abalone is a two-person zero-sum game, with perfect information.
+Abalone is a two-person [http://en.wikipedia.org/wiki/Zero-sum zero-sum] board game, with perfect information.
 
 === Space-State Complexity ===
 
