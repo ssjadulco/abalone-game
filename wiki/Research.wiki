@@ -33,7 +33,7 @@ This is a quick overview of different approaches to artificial intelligence whic
 Stuff about machine learning here.
 
 = Resources =
-[1]: [http://dme.uma.pt/people/faculty/pedro.campos/papers/Abalearn.pdf Abalearn: Efficient Self-Play Learning of the game Abalone] by Pedro Campos and Thibault Langlois.
+[1] [http://dme.uma.pt/people/faculty/pedro.campos/papers/Abalearn.pdf Abalearn: Efficient Self-Play Learning of the game Abalone] by Pedro Campos and Thibault Langlois.
 
 [2]: [http://books.google.nl/books?id=L4h2A2vF2pUC&pg=PA35&lpg=PA35&dq=%22machine+learning%22%2Babalone&source=bl&ots=3KOwjAK1zv&sig=kTf2yF8uy4t8g8Jx8r09T9jvd_M&hl=nl&ei=sfqxSvOwN8bi-QaZvsXcCQ&sa=X&oi=book_result&ct=result&resnum=5#v=onepage&q=%22machine%20learning%22%2Babalone&f=false Abalearn: A Risk-Sensitive Approach to Self-play Learning in Abalone] by Pedro Campos and Thibault Langlois.
 
