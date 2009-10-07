@@ -8,6 +8,8 @@ This is a quick overview of different approaches to artificial intelligence whic
 
 = Research =
 
+== Game Complexity ==
+
 == Standard Game Tree Search Algorithms ==
 
 === Minimax Algorithm ===
