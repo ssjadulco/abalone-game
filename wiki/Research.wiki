@@ -22,7 +22,8 @@ The space-state complexity of Abalone is similar to Checkers, and since checkers
 == Game Tree Search Algorithms ==
 
 === Minimax Algorithm ===
-[http://en.wikipedia.org/wiki/Minimax Minimax] is
+[http://en.wikipedia.org/wiki/Minimax Minimax] is algorithm.
+
 *Advantages*:
  # Easy to implement.
  # Something else
