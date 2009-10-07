@@ -40,8 +40,11 @@ The space-state complexity of Abalone is similar to Checkers, and since checkers
 
 == Evaluation Functions ==
 
+== Monte Carlo Methods ==
+Stuff about Monte Carlo Methods will go here.
+
 == Machine Learning ==
-Stuff about machine learning here.
+Stuff about machine learning will go here.
 
 = Resources =
 [http://dme.uma.pt/people/faculty/pedro.campos/papers/Abalearn.pdf Abalearn: Efficient Self-Play Learning of the game Abalone] by Pedro Campos and Thibault Langlois.
