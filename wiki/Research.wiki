@@ -16,7 +16,7 @@ This is a quick overview of different approaches to artificial intelligence whic
 === Game-Tree Complexity ===
 
 === Complexity of Abalone ===
-The average game-length of Abalone (when played by human players) is around 87 ply. The average branching factor is around 60.
+The average game-length of Abalone, between human players, is around 87 ply. By contrast the average game-length of Abalone, between computer players, is around 130, as computer players play more conservative/defensive. The average branching factor is around 60 - 65.
 
 == Standard Game Tree Search Algorithms ==
 
