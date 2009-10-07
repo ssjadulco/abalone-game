@@ -37,4 +37,6 @@ Stuff about machine learning here.
 
 [http://www.unimaas.nl/games/files/pcreport.pdf Implementing a Computer Player for Abalone using Alpha-Beta and Monte-Carlo Search] by Pascal Chorus.
 
+[http://cse.yeditepe.edu.tr/~eozcan/research/papers/ABLA_id136final.pdf A Simple Intelligent Agent for Playing Abalone Game: ABLA] by
+
 [http://stackoverflow.com/questions/1291377/how-do-i-create-a-good-evaluation-function-for-a-new-board-game Forum discussion] about evaluation functions.
