@@ -24,10 +24,10 @@ The space-state complexity of Abalone is similar to Checkers, and since checkers
 === Minimax Algorithm ===
 [http://en.wikipedia.org/wiki/Minimax Minimax] is algorithm.
 
-*Advantages*:
+_Advantages_:
  # Easy to implement.
  # Something else
-*Disadvantages*:
+_Disadvantages_:
  # Does not prune branches.
  # Something else.
 
