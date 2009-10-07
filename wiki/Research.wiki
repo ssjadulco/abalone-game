@@ -39,9 +39,10 @@ The space-state complexity of Abalone is similar to Checkers, and since checkers
 [http://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search Iterative Deepening] is 
 
 == Evaluation Functions ==
+Stuff about evaluation functions will go here.
 
 == Monte Carlo Methods ==
-Stuff about Monte Carlo Methods will go here.
+Stuff about Monte Carlo methods will go here.
 
 == Machine Learning ==
 Stuff about machine learning will go here.
