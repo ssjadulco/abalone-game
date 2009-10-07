@@ -10,6 +10,9 @@ This is a quick overview of different approaches to artificial intelligence whic
 
 == Game Complexity ==
 
+=== Space-State Complexity ===
+
+=== Game-Tree Complexity ===
 The average game-length of Abalone is 87 ply. This is determined with the help of the PBEM-archive which can be found on the internet. As the average branching factor is 60 we can calculate the resulting game-tree complexity: 5.0 × 10^154
 
 == Standard Game Tree Search Algorithms ==
