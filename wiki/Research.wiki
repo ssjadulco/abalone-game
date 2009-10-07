@@ -69,11 +69,11 @@ A [http://en.wikipedia.org/wiki/Evaluation_function evaluation function] is a fu
 === Basic Evaluation Function ===
 eval(_s_) = ^w^1^f^1(_s_) + ^w^2^f^2(_s_)
 
-== Monte Carlo Methods ==
-Stuff about Monte Carlo methods will go here.
-
 == Machine Learning ==
-Stuff about machine learning will go here.
+Machine learning could be applied to the evaluation functions, by for example, optimizing the weights in the evaluation functions.
+
+== Monte Carlo Methods ==
+Normal Monte Carlo Search seems poor. But might have a look into Monte Carlo Tree Search methods, as they seem to be promising.
 
 = References =
 [http://dme.uma.pt/people/faculty/pedro.campos/papers/Abalearn.pdf Abalearn: Efficient Self-Play Learning of the game Abalone] by Pedro Campos and Thibault Langlois.
