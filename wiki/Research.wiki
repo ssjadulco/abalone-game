@@ -72,11 +72,8 @@ This evaluation function in from the paper
 eval(_s_) = ^w^1^f^1(_s_) + ^w^2^f^2(_s_)
 
 _Where_:
-*^f^1(_s_): Evaluate closeness to center: Sum of the Manhattan distances of marbles
-belonging to each player to the center of the board is computed respectively, and
-their difference is calculated, denoted as f1(s) for a given board state s.
-*^w^1: Is the weight for ^f^1(_s_).
-* 
+ * ^f^1(_s_): The closeness to the center. The difference between the sum of the Manhattan distances of the marbles for both players, for a given board state _s_.
+ * ^w^1: Is the weight for ^f^1(_s_). 
 
 
 
