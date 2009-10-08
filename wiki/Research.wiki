@@ -119,6 +119,6 @@ Normal Monte Carlo Search seems poor. But might have a look into Monte Carlo Tre
 
 [http://www.ru.is/faculty/yngvi/pdf/WinandsBS08.pdf Monte-Carlo Tree Search Solver] by Mark H.M. Winands , Yngvi Bjornsson, and Jahn-Takeshi Saito
  
-[http://www.springerlink.com/content/q0v51v7j311um169/ Heuristic evaluation functions in artificial intelligence search algorithms] by Richard E. Korf (Need SpringerLink access, just access it at uni, works there). 
+[http://www.springerlink.com/content/q0v51v7j311um169/ Heuristic evaluation functions in artificial intelligence search algorithms] by Richard E. Korf (Need SpringerLink access). 
 
 [http://stackoverflow.com/questions/1291377/how-do-i-create-a-good-evaluation-function-for-a-new-board-game Forum discussion] about evaluation functions.
