@@ -118,7 +118,7 @@ Normal Monte Carlo Search seems poor. But might have a look into Monte Carlo Tre
 [http://sander.landofsand.com/publications/Monte-Carlo_Tree_Search_-_A_New_Framework_for_Game_AI.pdf Monte-Carlo Tree Search: A New Framework for Game AI] by Guillaume Chaslot, Sander Bakkes, Istvan Szita, and Pieter Spronck.
 
 [http://www.ru.is/faculty/yngvi/pdf/WinandsBS08.pdf Monte-Carlo Tree Search Solver] by Mark H.M. Winands , Yngvi Bjornsson, and Jahn-Takeshi Saito.
- 
-[http://www.springerlink.com/content/q0v51v7j311um169/ Heuristic evaluation functions in artificial intelligence search algorithms] by Richard E. Korf (Need SpringerLink access). 
+
+[http://www.springerlink.com/content/q0v51v7j311um169/ Heuristic evaluation functions in artificial intelligence search algorithms] by Richard E. Korf (Need SpringerLink access, can be accessed for free at uni). 
 
 [http://stackoverflow.com/questions/1291377/how-do-i-create-a-good-evaluation-function-for-a-new-board-game Forum discussion] about evaluation functions.
