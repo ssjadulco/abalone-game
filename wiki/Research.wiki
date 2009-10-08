@@ -72,9 +72,9 @@ Is a weighted linear evaluation function is from the paper
 eval(_s_) = w,,1,,f,,1,,(_s_) + w,,2,,f,,2,,(_s_)
 
 _Where_:
- * f,,1,,(_s_): The difference between the sum of the Manhattan distances of marbles for both players, for a given board state _s_.
+ * f,,1,,(_s_): The difference between the sum of the Manhattan distances of marbles for each players, for a given board state _s_.
  * w,,1,,: Is the weight for f,,1,,(_s_).
- * f,,2,,(_s_): The difference between the sum of the count of neighboring teammates for marbles for both players, for a given board state _s_.
+ * f,,2,,(_s_): The difference between the sum of the count of neighboring teammates for marbles for each players, for a given board state _s_.
  * w,,2,,: Is the weight for f,,2,,(_s_).
 
 === Lemmens Evaluation Function ===
