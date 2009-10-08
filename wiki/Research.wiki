@@ -99,6 +99,8 @@ _Where_:
 == Machine Learning ==
 Machine learning could be applied to the evaluation functions, by for example, optimizing the weights in the evaluation functions.
 
+One possibility is to use a genetic algorithm to learn the optimal weights.
+
 == Monte Carlo Methods ==
 Normal Monte Carlo Search seems poor. But might have a look into Monte Carlo Tree Search methods, as they seem to be promising.
 
