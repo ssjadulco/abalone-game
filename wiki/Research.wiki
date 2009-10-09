@@ -81,21 +81,29 @@ _Disadvantages_:
  # Does not prune branches.
 
 === Alpha-Beta Pruning ===
+[https://chessprogramming.wikispaces.com/Alpha-Beta resource].
 [http://en.wikipedia.org/wiki/Alpha-beta_pruning Alpha-Beta] is
 
 === Negascout Algorithm ===
+[https://chessprogramming.wikispaces.com/NegaScout resource].
 [http://en.wikipedia.org/wiki/Negascout Negascout] is
 
 === SSS Star Algorithm ===
+[https://chessprogramming.wikispaces.com/SSS*+and+Dual* resource].
 [http://en.wikipedia.org/wiki/SSS* SSS Star] is
 
 === MTD(f) Algorithm ===
+[https://chessprogramming.wikispaces.com/MTD%28f%29 resource].
 [http://en.wikipedia.org/wiki/MTD(f) MTD(f)] is
+
 === Iterative Deepening ===
+[https://chessprogramming.wikispaces.com/Iterative+Deepening resource].
 [http://en.wikipedia.org/wiki/Iterative_deepening_depth-first_search Iterative Deepening] is
 
 === Transposition Table ===
-A [http://en.wikipedia.org/wiki/Transposition_table transposition table] is a table which monitors all possible moves analyzed, and makes sure no double moves are analyzed. It is often done through the use of a [http://en.wikipedia.org/wiki/Hash_table hash table].  
+A [http://en.wikipedia.org/wiki/Transposition_table transposition table] is a table which monitors all possible moves analyzed, and makes sure no double moves are analyzed. It is often done through the use of a [http://en.wikipedia.org/wiki/Hash_table hash table].
+
+[https://chessprogramming.wikispaces.com/Zobrist+Hashing Zorbrit's hashing].  
 
 == Evaluation Functions ==
 A [http://en.wikipedia.org/wiki/Evaluation_function evaluation function] is a function which estimates how good 
