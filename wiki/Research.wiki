@@ -157,3 +157,7 @@ Normal Monte Carlo Search seems poor. But might have a look into Monte Carlo Tre
 [http://www.springerlink.com/content/q0v51v7j311um169/ Heuristic evaluation functions in artificial intelligence search algorithms] by Richard E. Korf (Need SpringerLink access, can be accessed for free at uni). 
 
 [http://stackoverflow.com/questions/1291377/how-do-i-create-a-good-evaluation-function-for-a-new-board-game Forum discussion] about evaluation functions.
+
+[http://www.hamedahmadi.com/gametree/ An Introduction to Game Tree Algorithms] by Hamed Ahmadi.
+
+ 
