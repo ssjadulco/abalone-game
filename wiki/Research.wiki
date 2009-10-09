@@ -58,6 +58,7 @@ _Disadvantages_:
 
 === Negamax Algorithm === 
 [http://en.wikipedia.org/wiki/Negamax Negamax] is a simplified variant of Minimax
+[https://chessprogramming.wikispaces.com/Negamax resource]
 
 _Pseudo Code_:
 {{{
