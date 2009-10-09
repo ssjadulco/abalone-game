@@ -52,7 +52,7 @@ public int Negamax(int depth) {
     	if (depth == 0) return evaluate();
     	int max = -infinity;
     	for (all moves)  {
-        	score = -negaMax(depth - 1);
+        	score = -Negamax(depth - 1);
         	if(score > max)
             		max = score;
     	}
