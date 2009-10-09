@@ -57,8 +57,8 @@ _Disadvantages_:
  # Needs two separate methods (Max and Min).
 
 === Negamax Algorithm === 
-[http://en.wikipedia.org/wiki/Negamax Negamax] is a simplified variant of Minimax
-[https://chessprogramming.wikispaces.com/Negamax resource]
+[https://chessprogramming.wikispaces.com/Negamax resource].
+[http://en.wikipedia.org/wiki/Negamax Negamax] is a simplified variant of Minimax.
 
 _Pseudo Code_:
 {{{
