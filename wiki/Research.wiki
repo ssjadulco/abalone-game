@@ -54,7 +54,7 @@ _Advantages_:
  # Benchmark algorithm (ie. defacto algorithm).
 _Disadvantages_:
  # Does not prune branches.
- # Needs to separate methods (Max and Min).
+ # Needs two separate methods (Max and Min).
 
 === Negamax Algorithm === 
 [http://en.wikipedia.org/wiki/Negamax Negamax] is a simplified variant of Minimax
