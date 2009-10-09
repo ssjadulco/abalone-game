@@ -103,7 +103,8 @@ _Disadvantages_:
 === Transposition Table ===
 A [http://en.wikipedia.org/wiki/Transposition_table transposition table] is a table which monitors all possible moves analyzed, and makes sure no double moves are analyzed. It is often done through the use of a [http://en.wikipedia.org/wiki/Hash_table hash table].
 
-[https://chessprogramming.wikispaces.com/Zobrist+Hashing Zorbrit's hashing].  
+[https://chessprogramming.wikispaces.com/Zobrist+Hashing Zorbrit's hashing].
+[https://chessprogramming.wikispaces.com/Transposition+Table resource].  
 
 == Evaluation Functions ==
 A [http://en.wikipedia.org/wiki/Evaluation_function evaluation function] is a function which estimates how good 
