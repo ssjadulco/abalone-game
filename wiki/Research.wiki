@@ -48,7 +48,7 @@ _Disadvantages_:
 
 _Pseudo Code_:
 {{{
-int Negamax(int depth) {
+public int Negamax(int depth) {
     	if (depth == 0) return evaluate();
     	int max = -infinity;
     	for (all moves)  {
