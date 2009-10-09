@@ -26,22 +26,35 @@ The space-state complexity of Abalone is similar to Checkers, and since checkers
 
 _Pseudo Code_:
 {{{
-function minimax(node, depth)
-    if node is a terminal node or depth == 0:
-        return the heuristic value of node
-    else:
-        α = -∞
-        for child in node:                       # evaluation is identical for both players 
-            α = max(α, -minimax(child, depth-1))
-        return α
+public int Max(int depth) {
+    if (depth == 0) return evaluate();
+    int max = -infinity;
+    for (all moves) {
+    	score = Min(depth - 1);
+        if(score > max)
+            max = score;
+    }
+    return max;
+}
+ 
+public int Min(int depth) {
+    if (depth == 0) return -evaluate();
+    int min = +infinity;
+    for (all moves) {
+        score = Max(depth - 1);
+        if(score < min)
+            min = score;
+    }
+    return min;
+}
 }}}
 
 _Advantages_:
  # Easy to implement.
- # Something else
+ # Benchmark algorithm (ie. defacto algorithm).
 _Disadvantages_:
  # Does not prune branches.
- # Something else.
+ # Needs to separate methods (Max and Min).
 
 === Negamax Algorithm === 
 [http://en.wikipedia.org/wiki/Negamax Negamax] is a simplified variant of Minimax
@@ -59,6 +72,12 @@ public int Negamax(int depth) {
     	return max;
 }
 }}}
+
+_Advantages_:
+ # Easy to implement.
+ # Only one method, instead of two like Minimax.
+_Disadvantages_:
+ # Does not prune branches.
 
 === Alpha-Beta Pruning ===
 [http://en.wikipedia.org/wiki/Alpha-beta_pruning Alpha-Beta] is
