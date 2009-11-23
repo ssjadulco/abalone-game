@@ -171,4 +171,6 @@ Normal Monte Carlo Search seems poor. But might have a look into Monte Carlo Tre
 
 [http://www.hamedahmadi.com/gametree/ An Introduction to Game Tree Algorithms] by Hamed Ahmadi.
 
+
+[http://www.iis.sinica.edu.tw/~tshsu/tcg2009/index.html Theory of Computer Games: Fall 2009] by Tsan-sheng Hsu.  
  
