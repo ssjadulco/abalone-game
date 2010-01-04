@@ -161,6 +161,8 @@ Normal Monte Carlo Search seems poor. But might have a look into Monte Carlo Tre
 
 [http://www.ist.tugraz.at/staff/aichholzer/research/rp/abalone/tele1-02_aich-abalone.pdf Algorithmic Fun - Abalone] by Oswin Aichholzer, Franz Aurenhammer, and Tino Werner.
 
+[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.114.6831&rep=rep1&type=pdf Abalone – Final Project Report] by 
+
 [http://sander.landofsand.com/publications/Monte-Carlo_Tree_Search_-_A_New_Framework_for_Game_AI.pdf Monte-Carlo Tree Search: A New Framework for Game AI] by Guillaume Chaslot, Sander Bakkes, Istvan Szita, and Pieter Spronck.
 
 [http://www.ru.is/faculty/yngvi/pdf/WinandsBS08.pdf Monte-Carlo Tree Search Solver] by Mark H.M. Winands , Yngvi Bjornsson, and Jahn-Takeshi Saito.
