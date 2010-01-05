@@ -179,4 +179,4 @@ Normal Monte Carlo Search seems poor. But might have a look into Monte Carlo Tre
 link to [http://www.ist.tugraz.at/staff/aichholzer/research/rp/abalone/ ABA-PRO] game. 
 
 ===Opponent Modeling===
-[http://www.cs.kuleuven.be/~dtai/publications/files/38667.ps.gz Opponent modeling by analyzing play 
+[http://www.cs.kuleuven.be/~dtai/publications/files/38667.ps.gz Opponent modeling by analyzing play]
