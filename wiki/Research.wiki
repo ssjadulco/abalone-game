@@ -177,3 +177,6 @@ Normal Monte Carlo Search seems poor. But might have a look into Monte Carlo Tre
 [http://www.iis.sinica.edu.tw/~tshsu/tcg2009/index.html Theory of Computer Games: Fall 2009] by Tsan-sheng Hsu.  
 
 link to [http://www.ist.tugraz.at/staff/aichholzer/research/rp/abalone/ ABA-PRO] game. 
+
+===Opponent Modeling===
+[http://www.cs.kuleuven.be/~dtai/publications/files/38667.ps.gz Opponent modeling by analyzing play 
