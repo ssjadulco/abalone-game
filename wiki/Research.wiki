@@ -184,3 +184,5 @@ link to [http://www.ist.tugraz.at/staff/aichholzer/research/rp/abalone/ ABA-PRO]
 [http://www.fdg.unimaas.nl/educ/donkers/pdf/kag2004.pdf Opponent Models and Knowledge Symmetry in Game-Tree Search] by Jeroen Donkers
 
 [http://www.cs.technion.ac.il/~shaulm/papers/pdf/Carmel-Markovitch-aaai1996.pdf Incorporating Opponent Models into Adversary Search] by David Carmel and Shaul Markovitch
+
+[http://fccs.wshe.lodz.pl/fccs2007/artykuly/kosciuk.pdf USER MODELING IN GAMES] by Katarzyna KO´SCIUK
