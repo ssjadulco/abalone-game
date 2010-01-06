@@ -182,3 +182,4 @@ link to [http://www.ist.tugraz.at/staff/aichholzer/research/rp/abalone/ ABA-PRO]
 [http://www.cs.kuleuven.be/~dtai/publications/files/38667.ps.gz Opponent modeling by analyzing play] 
 
 [http://www.fdg.unimaas.nl/educ/donkers/pdf/kag2004.pdf Opponent Models and Knowledge Symmetry in Game-Tree Search] by Jeroen Donkers
+[http://www.cs.technion.ac.il/~shaulm/papers/pdf/Carmel-Markovitch-aaai1996.pdf Incorporating Opponent Models into Adversary Search] by David Carmel and Shaul Markovitch
