@@ -181,8 +181,12 @@ link to [http://www.ist.tugraz.at/staff/aichholzer/research/rp/abalone/ ABA-PRO]
 ===Opponent Modeling===
 [http://www.cs.kuleuven.be/~dtai/publications/files/38667.ps.gz Opponent modeling by analyzing play] 
 
-[http://www.fdg.unimaas.nl/educ/donkers/pdf/kag2004.pdf Opponent Models and Knowledge Symmetry in Game-Tree Search] by Jeroen Donkers
+[http://www.fdg.unimaas.nl/educ/donkers/pdf/kag2004.pdf Opponent Models and Knowledge Symmetry in Game-Tree Search] by Jeroen Donkers.
 
-[http://www.cs.technion.ac.il/~shaulm/papers/pdf/Carmel-Markovitch-aaai1996.pdf Incorporating Opponent Models into Adversary Search] by David Carmel and Shaul Markovitch
+[http://www.cs.technion.ac.il/~shaulm/papers/pdf/Carmel-Markovitch-aaai1996.pdf Incorporating Opponent Models into Adversary Search] by David Carmel and Shaul Markovitch.
 
-[http://fccs.wshe.lodz.pl/fccs2007/artykuly/kosciuk.pdf USER MODELING IN GAMES] by Katarzyna KO´SCIUK
+[http://fccs.wshe.lodz.pl/fccs2007/artykuly/kosciuk.pdf USER MODELING IN GAMES] by Katarzyna KO´SCIUK.
+
+[http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6V0C-43B8CXY-1&_user=499911&_rdoc=1&_fmt=&_orig=search&_sort=d&_docanchor=&view=c&_acct=C000024558&_version=1&_urlVersion=0&_userid=499911&md5=c3632130b9789fbfa21c796713116eea Probabilistic opponent-model search] by H. H. L. M. Donkers, J. W. H. M. Uiterwijk and H. J. van den Herik.
+
+[http://www.fdg.unimaas.nl/educ/donkers/pubs/..%5Cpdf%5Cbnaic02.pdf Learning Opponent-Type Probabilities from PrOM Search] by H. H. L. M. Donkers, J. W. H. M. Uiterwijk and H. J. van den Herik.
