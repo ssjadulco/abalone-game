@@ -1,5 +1,6 @@
 package nl.maastrichtuniversity.dke.libreason.impl.treesearch;
 
+import nl.maastrichtuniversity.dke.libreason.def.SearchProblem;
 import nl.maastrichtuniversity.dke.libreason.def.SearchState;
 import nl.maastrichtuniversity.dke.libreason.def.heuristic.Evaluator;
 import nl.maastrichtuniversity.dke.libreason.def.treesearch.AbstractMinimaxSearch;
@@ -20,6 +21,10 @@ import nl.maastrichtuniversity.dke.libreason.def.treesearch.MinimaxProblem;
  */
 public class DLMinimax<N extends MinimaxNode> extends AbstractMinimaxSearch<N> implements DepthLimitedSearch<N>
 {
+	// The evaluator that gets used when the depth limit is reached
+	private Evaluator<Double> evaluator;
+	// The limit at which the search is cancelled.
+	private int depthLimit;
 
 	/**
 	 * A simple dummy evaluator that is used in case the user did not provide
@@ -54,7 +59,9 @@ public class DLMinimax<N extends MinimaxNode> extends AbstractMinimaxSearch<N> i
 	 */
 	public DLMinimax(MinimaxProblem problem, Evaluator<Double> eval, int depthLimit)
 	{
-		super(problem, eval, depthLimit);
+		super(problem);
+		this.depthLimit = depthLimit;
+		this.evaluator = eval;
 	}
 	
 	/**
@@ -86,10 +93,10 @@ public class DLMinimax<N extends MinimaxNode> extends AbstractMinimaxSearch<N> i
 	 * @param node
 	 *            the Node that is investigated
 	 * @return always true
-	 * @see nl.maastrichtuniversity.dke.libreason.def.treesearch.AbstractMinimaxSearch#continueAfterMaxNode(nl.maastrichtuniversity.dke.libreason.def.treesearch.MinimaxNode)
+	 * @see nl.maastrichtuniversity.dke.libreason.def.treesearch.AbstractMinimaxSearch#continueAfterMinNode(nl.maastrichtuniversity.dke.libreason.def.treesearch.MinimaxNode)
 	 */
 	@Override
-	public boolean continueAfterMaxNode(N node)
+	public boolean continueAfterMinNode(N node)
 	{
 		return true;
 	}
@@ -101,33 +108,12 @@ public class DLMinimax<N extends MinimaxNode> extends AbstractMinimaxSearch<N> i
 	 * @param node
 	 *            the Node that is investigated
 	 * @return always true
-	 * @see nl.maastrichtuniversity.dke.libreason.def.treesearch.AbstractMinimaxSearch#continueAfterMinNode(nl.maastrichtuniversity.dke.libreason.def.treesearch.MinimaxNode)
+	 * @see nl.maastrichtuniversity.dke.libreason.def.treesearch.AbstractMinimaxSearch#continueAfterMaxNode(nl.maastrichtuniversity.dke.libreason.def.treesearch.MinimaxNode)
 	 */
 	@Override
-	public boolean continueAfterMinNode(N node)
+	public boolean continueAfterMaxNode(N node)
 	{
 		return true;
-	}
-
-	/**
-	 * The node shall <u>not</u> be expanded if:
-	 * <ul>
-	 * <li>The depth limit is reached</li>
-	 * <li>An endnode is reached</li>
-	 * </ul>
-	 * In the first case we let the evaluator evaluate the quality of the state,
-	 * in the second case the quality value is taken from the domain represented
-	 * by the problem definition.
-	 * 
-	 * @param node
-	 *            the Node that is investigated
-	 * @return true if the above criteria do not apply
-	 * @see nl.maastrichtuniversity.dke.libreason.def.treesearch.AbstractMinimaxSearch#expandMaxNode(nl.maastrichtuniversity.dke.libreason.def.treesearch.MinimaxNode)
-	 */
-	@Override
-	public boolean expandMaxNode(N node)
-	{
-		return expandNode(node);
 	}
 
 	/**
@@ -147,6 +133,27 @@ public class DLMinimax<N extends MinimaxNode> extends AbstractMinimaxSearch<N> i
 	 */
 	@Override
 	public boolean expandMinNode(N node)
+	{
+		return expandNode(node);
+	}
+
+	/**
+	 * The node shall <u>not</u> be expanded if:
+	 * <ul>
+	 * <li>The depth limit is reached</li>
+	 * <li>An endnode is reached</li>
+	 * </ul>
+	 * In the first case we let the evaluator evaluate the quality of the state,
+	 * in the second case the quality value is taken from the domain represented
+	 * by the problem definition.
+	 * 
+	 * @param node
+	 *            the Node that is investigated
+	 * @return true if the above criteria do not apply
+	 * @see nl.maastrichtuniversity.dke.libreason.def.treesearch.AbstractMinimaxSearch#expandMaxNode(nl.maastrichtuniversity.dke.libreason.def.treesearch.MinimaxNode)
+	 */
+	@Override
+	public boolean expandMaxNode(N node)
 	{
 		return expandNode(node);
 	}
@@ -194,6 +201,36 @@ public class DLMinimax<N extends MinimaxNode> extends AbstractMinimaxSearch<N> i
 		// If none of the above cases applied, we see no reason not to go
 		// on searching:
 		return true;
+	}
+
+	@Override
+	public Evaluator<Double> getEvaluator()
+	{
+		return evaluator;
+	}
+
+	@Override
+	public void setEvaluator(Evaluator<Double> eval)
+	{
+		this.evaluator = eval;
+	}
+
+	@Override
+	public int getDepthLimit()
+	{
+		return this.depthLimit;
+	}
+
+	@Override
+	public void setDepthLimit(int limit)
+	{
+		this.depthLimit = limit;
+	}
+
+	@Override
+	public void initSearch(N startNode)
+	{
+		
 	}
 
 }

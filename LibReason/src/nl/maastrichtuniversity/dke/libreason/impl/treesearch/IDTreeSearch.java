@@ -16,42 +16,44 @@ import nl.maastrichtuniversity.dke.libreason.def.treesearch.SearchNode;
  */
 public class IDTreeSearch<N extends SearchNode> implements IterativeDeepeningSearch<N>
 {
-	
+
 	private class Searcher implements Runnable
 	{
 		private N result = null;
 		private N node;
-		
+
 		public Searcher(N node)
 		{
 			this.node = node;
 		}
-		
+
 		@Override
 		public void run()
 		{
 			boolean keepRunning = true;
 			searchStrategy.setDepthLimit(0);
-			while (keepRunning)
+			try
 			{
-				try
+				while (keepRunning)
 				{
 					searchStrategy.setDepthLimit(searchStrategy.getDepthLimit() + 1);
 					result = searchStrategy.search(node);
+
 				}
-				catch (InterruptedException e)
-				{
-					keepRunning = false;
-				}
-			}				
+			}
+			catch (InterruptedException e)
+			{
+				searchStrategy.setDepthLimit(searchStrategy.getDepthLimit() - 1);
+				keepRunning = false;
+			}
 		}
-		
+
 		public N getResult()
 		{
 			return result;
 		}
 	}
-		
+
 	// The point at which the search is canceled
 	private long timeLimit;
 	// The underlying (depth limited) search strategy which is executed
@@ -61,9 +63,8 @@ public class IDTreeSearch<N extends SearchNode> implements IterativeDeepeningSea
 	 * Creates a new Iterative Deepening Treesearch. You have to provide an
 	 * underlying depth limited search strategy. The problem description and
 	 * domain knowledge (if available) will be taken from this referenced search
-	 * class.
-	 * Furthermore you have to provide a time limit at which this search will be
-	 * canceled.
+	 * class. Furthermore you have to provide a time limit at which this search
+	 * will be canceled.
 	 * 
 	 * @param searchStrategy
 	 * @param timeLimit
@@ -86,15 +87,14 @@ public class IDTreeSearch<N extends SearchNode> implements IterativeDeepeningSea
 	public N search(N node) throws InterruptedException
 	{
 		// Initialize the searcher runnable with the start node
-		Searcher searcher = new Searcher(node);	
+		Searcher searcher = new Searcher(node);
 		// Create a new thread and let the searcher run in that thread
 		Thread searchThread = new Thread(searcher);
 		searchThread.start();
 		// Wait till the time has elapsed and then interrupt the search
 		Thread.sleep(timeLimit);
 		searchThread.interrupt();
-		
-		
+		searchThread.join();
 		return searcher.getResult();
 	}
 

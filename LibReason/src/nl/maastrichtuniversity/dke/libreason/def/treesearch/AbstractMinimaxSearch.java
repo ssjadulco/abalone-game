@@ -23,10 +23,6 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 {
 	// The problem that describes the domain.
 	private MinimaxProblem problem;
-	// The evaluator that gets used when the depth limit is reached
-	private Evaluator<Double> evaluator;
-	// The limit at which the search is cancelled.
-	private int depthLimit;
 
 	/**
 	 * Creates a new abstract minimax search for a given problem description.
@@ -42,11 +38,9 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 	 *            that the time needed to search normally increases
 	 *            exponentially with this value.
 	 */
-	public AbstractMinimaxSearch(MinimaxProblem problem, Evaluator<Double> eval, int depthLimit)
+	public AbstractMinimaxSearch(MinimaxProblem problem)
 	{
 		this.problem = problem;
-		this.evaluator = eval;
-		this.depthLimit = depthLimit;
 	}
 
 	/**
@@ -64,6 +58,9 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 		// We start the search from max's perspective.
 		// n will hold the node subsequent to startNode
 		// which is to be preferred by the starting player.
+		
+		initSearch(startNode);
+		
 		return maxNode(startNode);
 	}
 
@@ -94,7 +91,7 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 			// the following cast should work:
 			N current = (N) n;
 
-			if (expandMaxNode(current))
+			if (expandMinNode(current))
 			{
 				// The test told us, that we should indeed expand
 				// this successor. So we get the minimal child node of
@@ -108,7 +105,6 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 					// However we KNOW that it is an endnode (as no further
 					// actions were generated) so we simply assign a value and
 					// return.
-
 					current.setValue(problem.getFinalStateValue(current.getState()));
 				}
 				else
@@ -128,7 +124,7 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 				v = current;
 			}
 
-			if (!continueAfterMaxNode(current))
+			if (!continueAfterMinNode(current))
 			{
 				// The test told us, that we should not continue searching
 				// and prune the rest of the children of the current node.
@@ -157,7 +153,6 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 	@SuppressWarnings("unchecked")
 	protected N minNode(N node) throws InterruptedException
 	{
-
 		if (Thread.interrupted())
 		{
 			// For thread safe programming we check whether there was an
@@ -173,7 +168,7 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 			// the following cast should work:
 			N current = (N) n;
 
-			if (expandMinNode(current))
+			if (expandMaxNode(current))
 			{
 				// The test told us, that we should indeed expand
 				// this successor. So we get the maximal child node of
@@ -187,7 +182,6 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 					// However we KNOW that it is an endnode (as no further
 					// actions were generated) so we simply assign a value and
 					// return.
-
 					current.setValue(problem.getFinalStateValue(current.getState()));
 				}
 				else
@@ -209,7 +203,7 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 				v = current;
 			}
 
-			if (!continueAfterMinNode(current))
+			if (!continueAfterMaxNode(current))
 			{
 				// The test told us, that we should not continue searching
 				// and prune the rest of the children of the current node.
@@ -232,7 +226,7 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 	 * @param node
 	 * @return true if the search can be canceled
 	 */
-	public abstract boolean expandMinNode(N node);
+	public abstract boolean expandMaxNode(N node);
 
 	/**
 	 * Test - after having investigated a given node in the min routine -
@@ -242,7 +236,7 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 	 * @param node
 	 * @return true if the search can be canceled
 	 */
-	public abstract boolean continueAfterMinNode(N node);
+	public abstract boolean continueAfterMaxNode(N node);
 
 	/**
 	 * Test a given node in the max routine on whether or not the search should
@@ -251,7 +245,7 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 	 * @param node
 	 * @return true if the search can be canceled
 	 */
-	public abstract boolean expandMaxNode(N node);
+	public abstract boolean expandMinNode(N node);
 
 	/**
 	 * Test - after having investigated a given node in the max routine -
@@ -261,51 +255,30 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 	 * @param node
 	 * @return true if the search can be canceled
 	 */
-	public abstract boolean continueAfterMaxNode(N node);
-
-	/**
-	 * @see nl.maastrichtuniversity.dke.libreason.def.treesearch.TreeSearch#getProblem()
-	 */
-	@Override
-	public SearchProblem getProblem()
-	{
-		return problem;
-	}
+	public abstract boolean continueAfterMinNode(N node);
 
 	/**
 	 * Gets the evaluator which is currently used to assess the quality of a
 	 * state at the depth limit.
 	 */
-	public Evaluator<Double> getEvaluator()
-	{
-		return evaluator;
-	}
-
+	public abstract Evaluator<Double> getEvaluator();
+	
 	/**
 	 * Sets the evaluator which is used to assess the quality of a state at the
 	 * depth limit.
 	 */
-	public void setEvaluator(Evaluator<Double> eval)
-	{
-		this.evaluator = eval;
-	}
-
+	public abstract void setEvaluator(Evaluator<Double> eval);
+	
 	/**
-	 * @see nl.maastrichtuniversity.dke.libreason.def.treesearch.DepthLimitedSearch#getDepthLimit()
+	 * Initializes the search.
+	 * @param startNode the initial searchnode
 	 */
+	public abstract void initSearch(N startNode);
+	
 	@Override
-	public int getDepthLimit()
+	public SearchProblem getProblem()
 	{
-		return this.depthLimit;
-	}
-
-	/**
-	 * @see nl.maastrichtuniversity.dke.libreason.def.treesearch.DepthLimitedSearch#getDepthLimit()
-	 */
-	@Override
-	public void setDepthLimit(int limit)
-	{
-		this.depthLimit = limit;
+		return problem;
 	}
 
 }
