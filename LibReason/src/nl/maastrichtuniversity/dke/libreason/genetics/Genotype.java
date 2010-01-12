@@ -1,9 +1,10 @@
 package nl.maastrichtuniversity.dke.libreason.genetics;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class Genotype extends ArrayList<Gene>
+public class Genotype extends ArrayList<Gene> implements Serializable
 {
 	private static final long serialVersionUID = 4110730467197626434L;
 

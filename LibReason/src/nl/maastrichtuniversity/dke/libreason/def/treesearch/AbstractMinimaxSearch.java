@@ -60,8 +60,8 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 		// which is to be preferred by the starting player.
 		
 		initSearch(startNode);
-		
-		return maxNode(startNode);
+		N result = maxNode(startNode);
+		return result;
 	}
 
 	/**

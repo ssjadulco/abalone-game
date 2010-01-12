@@ -1,5 +1,6 @@
 package nl.maastrichtuniversity.dke.libreason.genetics;
 
+import java.io.Serializable;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,8 +8,9 @@ import java.util.Collections;
 import nl.maastrichtuniversity.dke.libreason.genetics.reproduction.ReproductionMethod;
 
 
-public class GeneticPopulation extends ArrayList<GeneticIndividual>
+public class GeneticPopulation extends ArrayList<GeneticIndividual> implements Serializable
 {
+	private static final long serialVersionUID = 8645207949443254343L;
 	NumberFormat f;
 
 	public GeneticPopulation()
