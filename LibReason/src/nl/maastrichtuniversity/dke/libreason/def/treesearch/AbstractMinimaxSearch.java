@@ -74,7 +74,7 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 	 *             if the thread was interrupted
 	 */
 	@SuppressWarnings("unchecked")
-	protected N maxNode(N node) throws InterruptedException
+	public N maxNode(N node) throws InterruptedException
 	{
 		if (Thread.interrupted())
 		{
@@ -151,7 +151,7 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 	 *             if the thread was interrupted
 	 */
 	@SuppressWarnings("unchecked")
-	protected N minNode(N node) throws InterruptedException
+	public N minNode(N node) throws InterruptedException
 	{
 		if (Thread.interrupted())
 		{
