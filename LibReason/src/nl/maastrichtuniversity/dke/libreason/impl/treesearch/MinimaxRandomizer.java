@@ -44,6 +44,7 @@ public class MinimaxRandomizer<N extends MinimaxNode> implements DepthLimitedSea
 	@Override
 	public N search(N initial) throws InterruptedException
 	{
+		searchStrategy.initSearch(initial);
 		return randomizedMax(initial);
 	}
 

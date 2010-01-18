@@ -72,12 +72,7 @@ public class HashingMinimaxSearch<N extends MinimaxNode & Hashable> extends Abst
 		{
 			return false;
 		}
-		if (searchStrategy.expandMinNode(node))
-		{
-//			table.put(node.getHash(), TableEntry.OPEN);
-			return true;
-		}
-		return false;
+		return searchStrategy.expandMinNode(node);
 	}
 
 	@Override
@@ -87,29 +82,16 @@ public class HashingMinimaxSearch<N extends MinimaxNode & Hashable> extends Abst
 		{
 			return false;
 		}
-		if (searchStrategy.expandMaxNode(node))
-		{
-//			table.put(node.getHash(), TableEntry.OPEN);
-			return true;
-		}
-		return false;
+		return searchStrategy.expandMaxNode(node);
 	}
 
 	protected boolean inHashTable(N node)
 	{
 		TableEntry e = table.get(node.getHash());
-		if (e != null)
+		if (e != null && e.getPrecision() >= (getDepthLimit() - node.getDepth()))
 		{
-			if (e == TableEntry.OPEN)
-			{
-				node.setValue(((MinimaxProblem) getProblem()).repetitionValue());
-				return true;
-			}
-			else if (e.getPrecision() >= (getDepthLimit() - node.getDepth()))
-			{
-				node.setValue(e.getValue());
-				return true;
-			}
+			node.setValue(e.getValue());
+			return true;
 		}
 		return false;
 	}

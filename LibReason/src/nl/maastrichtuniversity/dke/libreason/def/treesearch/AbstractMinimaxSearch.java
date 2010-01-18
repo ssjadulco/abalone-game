@@ -23,6 +23,7 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 {
 	// The problem that describes the domain.
 	private MinimaxProblem problem;
+	private int nodesInvestigated=0;
 
 	/**
 	 * Creates a new abstract minimax search for a given problem description.
@@ -82,10 +83,13 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 			// interrupt
 			throw new InterruptedException();
 		}
+		
 		// We store the maximal child in v:
 		N v = null;
 		for (SearchNode n : node.expand())
 		{
+			nodesInvestigated++;
+
 			// For every successor node
 			// We know that the search node should be of kind N, thus
 			// the following cast should work:
@@ -159,10 +163,14 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 			// interrupt
 			throw new InterruptedException();
 		}
+		
+
 		// We store the minimal child in v:
 		N v = null;
 		for (SearchNode n : node.expand())
 		{
+			nodesInvestigated++;
+
 			// For every successor node
 			// We know that the search node should be of kind N, thus
 			// the following cast should work:
@@ -279,6 +287,14 @@ public abstract class AbstractMinimaxSearch<N extends MinimaxNode> implements De
 	public SearchProblem getProblem()
 	{
 		return problem;
+	}
+	
+	/**
+	 * Get the number of nodes investigated
+	 */
+	public int getNodesInvestigated()
+	{
+		return nodesInvestigated;
 	}
 
 }

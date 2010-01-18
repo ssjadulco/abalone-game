@@ -230,7 +230,6 @@ public class DLMinimax<N extends MinimaxNode> extends AbstractMinimaxSearch<N> i
 	@Override
 	public void initSearch(N startNode)
 	{
-		
 	}
 
 }

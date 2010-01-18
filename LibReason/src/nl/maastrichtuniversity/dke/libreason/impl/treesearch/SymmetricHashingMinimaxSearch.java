@@ -1,13 +1,8 @@
 package nl.maastrichtuniversity.dke.libreason.impl.treesearch;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import nl.maastrichtuniversity.dke.libreason.def.hashing.Hashable;
 import nl.maastrichtuniversity.dke.libreason.def.hashing.SymmetryHashable;
 import nl.maastrichtuniversity.dke.libreason.def.treesearch.AbstractMinimaxSearch;
 import nl.maastrichtuniversity.dke.libreason.def.treesearch.MinimaxNode;
-import nl.maastrichtuniversity.dke.libreason.def.treesearch.MinimaxProblem;
 
 /**
  * TODO: Documentation
